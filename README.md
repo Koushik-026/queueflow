@@ -16,7 +16,7 @@ there. The local installation keeps the complete student/staff account workflow.
 
 ## Run it
 
-Install Node.js 24 or later, then open a terminal in this folder:
+Install Node.js 24.20.0 (the pinned project version), then open a terminal in this folder:
 
 ```sh
 npm ci
