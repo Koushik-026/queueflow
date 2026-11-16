@@ -1,0 +1,10 @@
+node_modules/
+dist/
+data/
+.env
+output/
+*.log
+documentation/
+*.private.json
+*.docx
+*.pdf
