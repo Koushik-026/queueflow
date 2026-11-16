@@ -7,6 +7,9 @@ display shows token numbers without exposing visitor names.
 Built for the Node.js skill development lab with **Node.js, Express, React,
 Socket.IO and SQLite**. There are no paid APIs or external database accounts to set up.
 
+**[Open the live showcase](https://queueflow-campus.onrender.com)** and choose
+**Try the live demo**. The first load after inactivity can take a little longer.
+
 The free hosted showcase uses fictional practice accounts. Its sample records can
 reset after inactivity or restarts, so regular registration/sign-in is disabled
 there. The local installation keeps the complete student/staff account workflow.

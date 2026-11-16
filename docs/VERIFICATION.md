@@ -11,6 +11,7 @@ used headless Chrome with Playwright at 1440px and 390px viewport widths.
 | Production frontend build                       | Passed                               |
 | Queue/database/HTTP tests                       | 32 passed, 0 failed                  |
 | Browser workflow checks                         | 33 passed, 0 failed                  |
+| Hosted HTTPS browser workflow checks            | 33 passed, 0 failed                  |
 | Uncaught browser/asset errors in recorded flows | 0                                    |
 | Student and staff phone layouts                 | No horizontal page overflow at 390px |
 | Public entry response                           | HTTP 200                             |
@@ -49,10 +50,18 @@ overnight service, private history, demo isolation and reopening the SQLite file
 
 ## Scope
 
-These checks cover a local single-process demonstration, not load capacity or a
-live college deployment. The Dockerfile is prepared but a container build and
-remote deployment were not exercised. Optional audio, screen-reader behavior,
-other browser engines and real-world service-duration accuracy were not measured.
+The free showcase is live at https://queueflow-campus.onrender.com, running
+Node.js 24.20.0 on Linux in Render's Singapore region. Its build ran all 32
+queue/API checks before publishing. The same 33-check browser workflow passed on
+the public HTTPS URL, including live student/staff updates and phone layouts.
+The database readiness endpoint returned HTTP 200 and the public profile reported
+showcase mode. Regular login/registration are disabled on that temporary showcase;
+its fictional practice accounts retain the authenticated workflows.
+
+These checks cover small single-process demonstrations, not a production college
+rollout or load capacity. The optional Dockerfile was not built. Audio,
+screen-reader behavior, other browser engines and real service-duration accuracy
+were not measured. Free-instance records can reset after inactivity or restarts.
 
 Browser screenshots and machine-readable results are saved locally under
 `output/browser/`. The shareable archive excludes databases, signing keys,
